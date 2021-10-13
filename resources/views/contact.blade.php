@@ -1,7 +1,7 @@
 @extends("layouts.base")
 
-@section("title", "Welcome")
+@section("title", "Contact")
 
 @section("wrapper")
-    <h1>Welcome</h1>
+    <h1>Contact</h1>
 @endsection
