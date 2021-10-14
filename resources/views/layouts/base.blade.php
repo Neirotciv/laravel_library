@@ -10,23 +10,22 @@
 </head>
 <body>
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
                 <a class="navbar-brand" href="/">Welcome</a>
                 <a class="navbar-brand" href="/market">Market</a>
                 <a class="navbar-brand" href="/contact">Contact</a>
             </div>
         </nav>
-    </div>
+    </div>  
 
-    <div class="wrapper">
-    
+    <div class="container wrapper">
         @yield("wrapper")
     </div>
 
-    <footer>
+    <!-- <footer>
         <h3>Footer</h3>
-    </footer>
+    </footer> -->
     <script src="{{ asset('js/bootstrap.js') }}" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
