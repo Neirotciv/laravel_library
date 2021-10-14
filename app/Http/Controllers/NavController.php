@@ -16,4 +16,8 @@ class NavController extends Controller
     public function marketPage() {
         return view("market");
     }
+
+    public function libraryPage() {
+        return view("library");
+    }
 }

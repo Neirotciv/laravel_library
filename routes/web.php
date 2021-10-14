@@ -29,3 +29,4 @@ use App\Http\Controllers\NavController;
 Route::get('/', [NavController::class, 'welcomePage']);
 Route::get('/market', [NavController::class, 'marketPage']);
 Route::get('/contact', [NavController::class, 'contactPage']);
+Route::get('/library', [NavController::class, 'libraryPage']);
