@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NavController;
+use App\Http\Controllers\BookController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,4 +30,5 @@ use App\Http\Controllers\NavController;
 Route::get('/', [NavController::class, 'welcomePage']);
 Route::get('/market', [NavController::class, 'marketPage']);
 Route::get('/contact', [NavController::class, 'contactPage']);
-Route::get('/library', [NavController::class, 'libraryPage']);
+Route::get('/form', [NavController::class, 'contactPage']);
+Route::resource('/library', BookController::class);
