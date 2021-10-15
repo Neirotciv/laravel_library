@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Book;
 
@@ -15,7 +16,8 @@ class BookController extends Controller
     public function index()
     {
         $books = Book::all();
-        return view('library', compact('books'));
+        // return view('library', compact('books'));
+        return view('library', ['books' => $books]);
     }
 
     /**
@@ -25,18 +27,23 @@ class BookController extends Controller
      */
     public function create()
     {
-        //
+        return view('create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        //
+    {   
+        $book = new Book;
+        $book->title = $request->title;
+        $book->author = $request->author;
+        $book->publication_year = $request->publication_year;
+        $book->synopsis = $request->synopsis;
+        $book->save;
     }
 
     /**

@@ -14,6 +14,7 @@
             <div class="container">
                 <a class="navbar-brand" href="/">Welcome</a>
                 <a class="navbar-brand" href="/library">Librairie</a>
+                <a class="navbar-brand" href="/create">Formulaire</a>
                 <a class="navbar-brand" href="/market">Market</a>
                 <a class="navbar-brand" href="/contact">Contact</a>
             </div>

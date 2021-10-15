@@ -6,6 +6,7 @@ body {
 
 .wrapper {
     background-color: rgba(255, 255, 255, 0.85);
+    padding: 10px;
 }
 
 footer {
@@ -20,4 +21,18 @@ footer {
     padding: 10px;
     background-color: rgb(231, 231, 231);
     box-shadow: 2px 2px 2px rgb(180, 172, 172);
+}
+
+.booklist-wrapper td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.booklist-wrapper th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.book-form {
+    width: 50%;
 }

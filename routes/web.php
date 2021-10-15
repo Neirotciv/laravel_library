@@ -32,3 +32,5 @@ Route::get('/market', [NavController::class, 'marketPage']);
 Route::get('/contact', [NavController::class, 'contactPage']);
 Route::get('/form', [NavController::class, 'contactPage']);
 Route::resource('/library', BookController::class);
+Route::get('/create', [BookController::class, 'create']);
+Route::post('/store', [BookController::class, 'store']);
